@@ -21,11 +21,19 @@ use IpAnalyst\IpAnalyst;
 class ClassName {
     
 	public function foo1(){
-        echo json_encode(IpAnalyst::search('192.168.1.1'));
+        echo json_encode(IpAnalyst::getRegionDetail('202.197.209.133'));
     }
     
 	public function foo2(){
-        echo json_encode(IpAnalyst::locations());
+        echo json_encode(IpAnalyst::getRegionCode('202.197.209.133'));
+    }
+        
+	public function foo3(){
+        echo json_encode(IpAnalyst::getRegionInfo('202.197.209.133'));
+    }
+    
+	public function foo4(){
+        echo json_encode(IpAnalyst::regionList());
     }
 }
 ?>
@@ -33,17 +41,29 @@ class ClassName {
 
 foo1：
 
-```json
-[
-    "中国",
-    "河南",
-    "郑州",
-    "",
-    "410100"
-]
+```text
+array(5) {
+  [0] => string(6) "中国"
+  [1] => string(6) "河南"
+  [2] => string(6) "郑州"
+  [3] => string(0) ""
+  [4] => string(6) "410100"
+}
 ```
 
 foo2：
+
+```text
+string(6) "410100"
+```
+
+foo3：
+
+```text
+string(21) "中国 河南 郑州 "
+```
+
+foo4：
 
 ```json
 {
