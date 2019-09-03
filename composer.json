@@ -1,6 +1,7 @@
 {
   "name": "jinyicheng/ip-analyst",
   "description": "根据IP地址，进行信息解析",
+  "keywords": ["ip","analyst","region"],
   "license": "MIT",
   "authors": [
     {
@@ -13,7 +14,7 @@
   },
   "autoload": {
     "psr-4": {
-      "jinyicheng\\IpAnalyst": "src/"
+      "jinyicheng\\IpAnalyst\\": "src/"
     }
   }
 }
