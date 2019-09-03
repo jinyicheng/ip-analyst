@@ -4,6 +4,7 @@ namespace jinyicheng\IpAnalyst;
 
 use Exception;
 use InvalidArgumentException;
+use UnexpectedValueException;
 
 class IpAnalyst
 {
