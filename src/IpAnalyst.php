@@ -1,5 +1,6 @@
 <?php
 
+namespace jinyicheng\IpAnalyst;
 class IpAnalyst
 {
     private $file = NULL;
