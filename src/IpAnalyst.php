@@ -15,7 +15,7 @@ class IpAnalyst
 
     private $meta = [];
 
-    private $database = 'src/data.ia';
+    private $database = 'data.ia';
 
     private static $reader = null;
 
@@ -180,7 +180,7 @@ class IpAnalyst
             return self::$reader;
         } else {
             $reader = new self();
-            $databaseSrc = __DIR__ . '/ip/' . $reader->database;
+            $databaseSrc = __DIR__ . '/' . $reader->database;
             if (is_readable($databaseSrc) === FALSE) {
                 throw new InvalidArgumentException("The IP Database file \"{$databaseSrc}\" does not exist or is not readable.");
             }
