@@ -1,5 +1,20 @@
 # ip-analyst
 根据IP进行相关分析
+
+composer安裝：
+
+```
+composer require jinyicheng/ip-analyst
+```
+
+composer卸载：
+
+```
+composer remove jinyicheng/ip-analyst
+```
+
+代码示例：
+
 ```php
 <?php
 use IpAnalyst\IpAnalyst;
@@ -558,4 +573,5 @@ foo2：
     }
 }
 ```
+
 
