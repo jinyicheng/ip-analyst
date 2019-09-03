@@ -1,6 +1,10 @@
 <?php
 
 namespace jinyicheng\IpAnalyst;
+
+use Exception;
+use InvalidArgumentException;
+
 class IpAnalyst
 {
     private $file = NULL;
