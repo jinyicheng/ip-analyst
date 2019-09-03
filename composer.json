@@ -1,0 +1,14 @@
+{
+  "name": "jinyicheng/ip-analyst",
+  "description": "根据IP地址，进行信息解析",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "jinyicheng",
+      "email": "234067496@qq.com"
+    }
+  ],
+  "require": {
+    "php": ">=5.4.0"
+  }
+}
