@@ -1,6 +1,6 @@
 <?php
 
-namespace jinyicheng\IpAnalyst;
+namespace IpAnalyst;
 
 use Exception;
 use InvalidArgumentException;
@@ -184,11 +184,11 @@ class IpAnalyst
             if (is_readable($databaseSrc) === FALSE) {
                 throw new InvalidArgumentException("The IP Database file \"{$databaseSrc}\" does not exist or is not readable.");
             }
-            $reader->file = @fopen($databaseSrc, 'rb');
+            $reader->file = fopen($databaseSrc, 'rb');
             if ($reader->file === FALSE) {
                 throw new InvalidArgumentException("IP Database File opening \"{$databaseSrc}\".");
             }
-            $reader->fileSize = @filesize($databaseSrc);
+            $reader->fileSize = filesize($databaseSrc);
             if ($reader->fileSize === FALSE) {
                 throw new UnexpectedValueException("Error determining the size of \"{$databaseSrc}\".");
             }

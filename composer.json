@@ -14,7 +14,7 @@
   },
   "autoload": {
     "psr-4": {
-      "jinyicheng\\IpAnalyst\\": "src/"
+      "IpAnalyst\\": "src/"
     }
   }
 }
